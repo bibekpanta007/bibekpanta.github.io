@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibek's Interests</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> <!-- Page content starts -->
+
+    <header>
+        <nav>
+            <div class="logo">BIBEK.DEV</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Resume</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="cheatsheet.html">Cheat Sheet</a></li>
+                <li>
+                    <!-- Theme toggle button -->
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Hero section -->
+        <header class="resume-header">
+            <span style="color: var(--text-dim); letter-spacing: 2px; font-size: 0.9rem;">PASSION BEYOND CODE</span>
+            <h1>My Technical Interests</h1>
+            <p style="color: var(--primary-neon);">Exploring system design, C++ performance, and cybersecurity.</p>
+        </header>
+
+        <!-- About hobby/interest -->
+        <section>
+            <h2 class="section-title">Why I Love Tech</h2>
+            <p style="color: var(--text-dim); font-size: 1.1rem;">
+                My hobby is an extension of my studies. I believe the best developers are curious, exploring new frameworks and diving into complex concepts like C++ memory management and full-stack architecture.
+            </p>
+        </section>
+
+        <!-- Focus areas displayed as cards -->
+        <section>
+            <h2 class="section-title">Focus Areas</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=500&q=60" alt="Cybersecurity" class="tech-img">
+                    <h3 style="color: var(--primary-neon);">System Security</h3>
+                    <p style="color: var(--text-dim);">Learning best practices for protecting data and preventing web exploits.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=500&q=60" alt="Algorithms" class="tech-img">
+                    <h3 style="color: var(--primary-neon);">Algorithms & Data Structures</h3>
+                    <p style="color: var(--text-dim);">Optimizing code for speed and efficiency, especially in C++.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=60" alt="Full Stack Development" class="tech-img">
+                    <h3 style="color: var(--primary-neon);">Full-Stack Architecture</h3>
+                    <p style="color: var(--text-dim);">Understanding the full flow of data from database to browser.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mini JavaScript project: Guessing Game -->
+        <section>
+            <h2 class="section-title">Showcase: Guessing Game</h2>
+            <p style="color: var(--text-dim); margin-bottom: 20px;">
+                Test your luck! A quick demonstration of JavaScript and DOM. Guess the secret number between 1 and 10.
+            </p>
+            
+            <div id="guessing-game" style="text-align: center; padding: 20px; border: 1px dashed var(--primary-neon); border-radius: 10px;">
+                <h3 style="color: var(--primary-neon); margin-bottom: 15px;">Can You Beat the Code?</h3>
+                
+                <!-- Input for guess -->
+                <input type="number" id="guessInput" min="1" max="10" placeholder="Enter your guess (1-10)" 
+                       style="padding: 10px; width: 200px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+                
+                <!-- Button to check guess -->
+                <button id="checkGuessBtn" class="btn btn-primary" style="margin: 0 auto; display: block;">
+                    Check Guess
+                </button>
+
+                <!-- Feedback message -->
+                <p id="gameMessage" style="margin-top: 20px; font-weight: 600; min-height: 20px;">
+                    Start guessing!
+                </p>
+            </div>
+        </section>
+
+    </div> <!-- End container -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bibek Panta. Designed with code.</p>
+    </footer>
+
+    <!-- JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
