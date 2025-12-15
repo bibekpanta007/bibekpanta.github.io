@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibek Panta - Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> <!-- Page content starts -->
+
+    <header>
+        <nav>
+            <div class="logo">BIBEK.DEV</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Resume</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="cheatsheet.html">Cheat Sheet</a></li>
+                <li>
+                    <!-- Theme toggle button -->
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <!-- Hero section -->
+        <header class="resume-header">
+            <span style="color: var(--text-dim); letter-spacing: 2px; font-size: 0.9rem;">HELLO, I'M</span>
+            <h1>Bibek Panta</h1>
+            <p id="typewriter"></p> 
+
+            <!-- Buttons -->
+            <div class="btn-group">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fa-solid fa-envelope"></i> Contact Me
+                </a>
+                <a href="https://github.com/bibekpanta007" target="_blank" class="btn btn-secondary">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/bibek-panta-65558b248/" target="_blank" class="btn btn-secondary">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </header>
+
+        <!-- About Me -->
+        <section>
+            <h2 class="section-title">About Me</h2>
+            <p style="color: var(--text-dim); font-size: 1.1rem;">
+                Software Development student with experience in C++, SQL, and Web Technologies.
+            </p>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2 class="section-title">Experience</h2>
+            <table>
+                <tr>
+                    <th>Role</th>
+                    <th>Company</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>Junior Developer</td>
+                    <td>LN Universal Technology</td>
+                    <td>July 2024 - Aug 2025</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2 class="section-title">Education</h2>
+            <table>
+                <tr>
+                    <th>Credential</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Software Development Diploma</td>
+                    <td>Bow Valley College</td>
+                    <td>2025 - Present</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Tech Skills -->
+        <section>
+            <h2 class="section-title">Tech Skills</h2>
+            <div class="skills-container">
+                <div class="skill-bar">
+                    <div class="skill-bar-label">
+                        <span>C++ / OOP</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-progress-track">
+                        <div class="skill-progress-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-bar-label">
+                        <span>HTML5 / CSS3</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-progress-track">
+                        <div class="skill-progress-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-bar-label">
+                        <span>JavaScript (DOM)</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-progress-track">
+                        <div class="skill-progress-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-bar-label">
+                        <span>SQL / Database</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-progress-track">
+                        <div class="skill-progress-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <p style="color: var(--text-dim);">Fill the form to send a message via email.</p>
+            
+            <form class="contact-form" action="mailto:bibekpanta3726@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="Name" id="name" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="Reply-To" id="email" required placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="Message" id="message" rows="5" required placeholder="How can I help you?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">
+                    <i class="fa-solid fa-paper-plane"></i> Send (Opens Email App)
+                </button>
+            </form>
+        </section>
+
+    </div> <!-- End container -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bibek Panta. Designed with code.</p>
+    </footer>
+
+    <!-- JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
